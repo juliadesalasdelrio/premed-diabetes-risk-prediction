@@ -80,8 +80,7 @@ st.set_page_config(
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 BANNER_PATH = os.path.join(BASE_DIR, "banner.jpg")
 
-banner = Image.open(BANNER_PATH)
-st.image(banner, use_container_width=True)
+st.image(BANNER_PATH, use_container_width=True)
 
 st.markdown(
     """
@@ -485,6 +484,7 @@ st.caption(
     "Disclaimer: This risk estimation is based on statistical modelling "
     "and should not be considered a clinical diagnosis."
 )
+
 
 
 
