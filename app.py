@@ -2,7 +2,6 @@ import streamlit as st
 import pandas as pd
 import os
 from model_utils import predict_risk_with_explanation_and_action
-import os
 import uuid
 from datetime import datetime
 from PIL import Image
@@ -546,6 +545,7 @@ st.caption(
     "Disclaimer: This risk estimation is based on statistical modelling "
     "and should not be considered a clinical diagnosis."
 )
+
 
 
 
